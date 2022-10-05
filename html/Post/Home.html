@@ -11,7 +11,7 @@
 
     {%for Post in Posts%}
     <hr>
-    <h3>{{Post.Title}}</h3>
+    <a href="{%url 'Post:detail' Post.id %}"> <h3>{{Post.Title}}</h3></a>
     <p>By:{{Post.Author}}| Pulished:{{Post.Publish}} | Last Update:{{Post.Updated}}</p>
     <h4>{{Post.Body}}</h4>
     {%endfor%}
