@@ -7,8 +7,7 @@ class EmailPostForm(forms.Form):
     to=forms.EmailField()
     comments=forms.CharField(required=False,widget=forms.Textarea)
 
-class CommentForm(models.Model):
+class CommentForm(forms.Form):
     class Meta:
         model=Comment
         fields=['name','email','body']
-        

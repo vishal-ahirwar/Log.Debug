@@ -25,9 +25,6 @@ def SharePost(request,post_id):
         if form.is_valid():
             cd =form.cleaned_data
             send_mail("Test Mail","This is a Test Email from django Application",cd['email'],list(cd['to']))
-
-            #email
-
     else:
         form=EmailPostForm()
     return render(request,'Post/Share.html',{'post':post,'form':form})
