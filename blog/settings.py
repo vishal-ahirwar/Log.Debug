@@ -123,8 +123,8 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-EMAIL_HOST='smtp.mail.yahoo.com'
-EMAIL_HOST_USER='itsvishal.ahirwar@yahoo.com'
-EMAIL_HOST_PASSWORD='Juz9uapsvp00910091'
-EMAIL_PORT= 465
+EMAIL_HOST=''
+EMAIL_HOST_USER=''
+EMAIL_HOST_PASSWORD=''
+EMAIL_PORT= 0
 EMAIL__USE_TLS=True
